@@ -8,10 +8,10 @@ edition = "2018"
 quinn = { path = "../quinn" }
 slog-term = "2"
 structopt = "0.2.7"
-tokio = "0.1.6"
-tokio-current-thread = "0.1"
+tokio = { git = "https://github.com/tokio-rs/tokio.git", rev = "12546d1d9c593d97244c49cbc303675d1be2367b" }
+tokio-current-thread = { git = "https://github.com/tokio-rs/tokio.git", rev = "12546d1d9c593d97244c49cbc303675d1be2367b" }
 rustls = { version = "0.15", features = ["dangerous_configuration"] }
 failure = "0.1"
 slog = "2.2"
-futures = "0.1.21"
+futures-preview = { version = "0.3.0-alpha.11", features = ["compat"] }
 webpki = "0.19"
